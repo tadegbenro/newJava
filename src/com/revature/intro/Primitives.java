@@ -11,7 +11,7 @@ public class Primitives {
 	byte byt; // 8 bits
 	
 	Integer intWrap = new Integer(10);
-	Boolean boolWarap = b; //AUTOBOXING
+	Boolean boolWrap = b; //AUTOBOXING
 	Character charWrap = new Character('c');
 	Double doubleWrap = d;
 	
@@ -40,11 +40,14 @@ public class Primitives {
 	static void numberFormatting( ) {
 		int largeNum = 100_000_000;
 		//int wrong =_1_;
+		
 		double rightDouble = 101.31_94;
 		//double wrongDouble = 102_.3194;
 		
 		long max = 21474836470L;
-			
+		
+		System.out.println("Large NUm :" + largeNum+" "+"rightDouble :"+ rightDouble);
+		System.out.println("Long max :" + max);	
 		
 	}
 	static void casting() {

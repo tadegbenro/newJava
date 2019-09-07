@@ -11,6 +11,10 @@ public class TestBasics2 {
 		basic3.setAboutMe("Coolio Jones");
 		System.out.println(basic3.getAboutMe()); //CLassBasics 
 		//System.out.println(basic3.AboutMe)
+		
+		//Testing Primitives Class
+		//Primitives check = new Primitives();
+		Primitives.numberFormatting();
 	}
 }
 	

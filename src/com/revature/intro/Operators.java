@@ -13,14 +13,25 @@ public class Operators {
 	
 	public static void main(String[] args) {
 		System.out.println(12 | 25);
+		//System.out.println(postIncrement(1));
+		postIncrement(2);
+		System.out.println("Complement Example :" +complement(3));
+		System.out.println(relational("john"));
+		System.out.println("Bitwise Example: "+bitwiseOr(12,25));
+		System.out.println(ternary(-2));
 	}
 	
 	//---------------UNARY OPERATORS---------------------------
 	
 	//increment/decrement operators
 	static void postIncrement(int count) {
-		if(++count == 5) System.out.println("true"); 
-		System.out.println(count);
+		if(++count == 5) {
+			System.out.println("true"); 
+		}
+		else {
+			System.out.println("false "+ count+" is not equal to 5");
+		}
+		
 	}
 	
 	static boolean preIncrement(int count) {

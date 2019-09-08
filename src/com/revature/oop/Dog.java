@@ -3,7 +3,7 @@ package com.revature.oop;
 public class Dog extends Animal{
 	/*
 	 * Here we do more with Inheritance. Since the abstract class Animal uses the Liveable Interface
-	 * Dog being a concrete class must implements all methods in Leveable
+	 * Dog being a concrete class must implements all methods in Liveable
 	 */
 	public String type = "Dog";
 	public String animalVar = "Now this is a dog"; //Overriding animalVar in concrete class
@@ -38,11 +38,11 @@ public class Dog extends Animal{
 	}
 
 
-	@Override
-	public String communicate() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	//@Override
+	//public String communicate() {
+	//	// TODO Auto-generated method stub
+	//	return null;
+	//}
 	
 
 }

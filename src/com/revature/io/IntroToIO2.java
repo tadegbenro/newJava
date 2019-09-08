@@ -30,7 +30,7 @@ public class IntroToIO2 {
 	
 	public static void main(String[] args)  {
 		String path = "src/com/revature/io/text.txt";
-			//write("writing this to file", path );
+		//write("writing this to file", path );
 		read(path);
 	
 	}
@@ -44,7 +44,7 @@ public class IntroToIO2 {
 				e.printStackTrace();
 			}
 			finally {
-			//	bw.close();
+			//	bw.close(); 
 			}
 	}
 	

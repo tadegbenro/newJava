@@ -57,7 +57,7 @@ public class Primitives {
 	static void casting() {
 		/*
 		 * Casting is the process of making a variable behave as
-		 * a vairable of anther type. We can cast between primitives of the same
+		 * a variable of anther type. We can cast between primitives of the same
 		 * literal type or objects on the same inheritance tree
 		 * We can either explicitly cast or implicitly cast
 		 */

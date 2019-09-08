@@ -27,7 +27,10 @@ public abstract class Animal implements Liveable{
 		return "Not sure what I eat yet!";
 	}
 	
-	abstract void move();
+	public String communicate() {
+		return "With its mouth";
+	}
+	abstract void move(); // introduced in the Animal Class
 	
 		
 		

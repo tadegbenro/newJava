@@ -13,8 +13,11 @@ public class TestBasics2 {
 		//System.out.println(basic3.AboutMe)
 		
 		//Testing Primitives Class
-		//Primitives check = new Primitives();
+		
 		Primitives.numberFormatting();
+		Primitives.casting();
+		Primitives.numberBases();
+		Primitives.wrappers();
 	}
 }
 	

@@ -19,7 +19,10 @@ public class Primitives {
 		//numberBases();
 		//casting();
 		System.out.println(numToChar(2));
+		System.out.println(charToNum('2'));
 	}
+	
+	//Assigning Different Bases to a Primitive variable
 	static void numberBases() {
 		int dec = 10;
 		System.out.println(dec);
@@ -37,16 +40,17 @@ public class Primitives {
 		System.out.println(hex);
 	}
 	
+	//Demonstrating number formatting features using underscores to a primitive
 	static void numberFormatting( ) {
 		int largeNum = 100_000_000;
 		//int wrong =_1_;
 		
-		double rightDouble = 101.31_94;
+		double rightDouble = 101.3_914; //101.31_94;
 		//double wrongDouble = 102_.3194;
 		
 		long max = 21474836470L;
 		
-		System.out.println("Large NUm :" + largeNum+" "+"rightDouble :"+ rightDouble);
+		System.out.println("Large NUm: " + largeNum+" "+"rightDouble: "+ rightDouble);
 		System.out.println("Long max :" + max);	
 		
 	}
@@ -57,18 +61,27 @@ public class Primitives {
 		 * literal type or objects on the same inheritance tree
 		 * We can either explicitly cast or implicitly cast
 		 */
-		int x = 32768; //max value for short
+		
+		int x = 32768; //max value for short is 32767 going over displays a negative value
 		long lon = x; //implicitly casting into a larger reference type
-		short sh = (short) x;
-		System.out.println("SHort is "+ sh);
-		System.out.println("Lon is "+ lon);
+		short sh = (short) x; //explicitly casting into a smaller type
+		System.out.println("Short is "+ sh);
+		System.out.println("Long is "+ lon);
 	}
 	
-	static int charToNUM(char c) {
+	static int charToNum(char c) {
 		return c;
 	}
 	static char numToChar(int num) {
 		return (char) num;
+	}
+	
+	//Understanding Wrappers
+	static void wrappers(){
+		System.out.println(Integer.MAX_VALUE);
+		
+		//System.out.println(Integer.parseInt("nine"));
+		
 	}
 
 }

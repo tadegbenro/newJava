@@ -9,6 +9,8 @@ public class UnderstandingQueue {
 		PriorityQueue<Integer> queue = new PriorityQueue<Integer>();
 		
 		for (int i= 10; i>0; i--) {
+			//debug
+			System.out.println(i);
 			queue.add(i);
 		}
 		
@@ -18,7 +20,7 @@ public class UnderstandingQueue {
 		
 		//Peeking -> Obtaining the head of the Queue
 		//Polling -> Removing the head of the Queue
-		
+		System.out.println("Queue is: "+ queue);
 		System.out.println("Queue Size is: "+ queue.size());
 		System.out.println("Head of Queue is "+ queue.peek()); //Head of Queue (1)
 		queue.poll(); //Removing the head (1)

@@ -29,16 +29,25 @@ public class UnderstandingExceptions {
 	
 	static Scanner scanner = new Scanner(System.in);
 	
-	//In thsi case the exception is being handled here in main
+	//In this case the exception is being handled here in main
 	
-	public static void main(String[] args) throws ArrayIndexOutOfBoundsException, IOException {
+	//public static void main(String[] args) throws ArrayIndexOutOfBoundsException, IOException {
+	public static void main(String[] args) { //Exceptions finally handled in main
 		//run();
 		//runB();
 		//runC();
 		
 		int[] arr = {1,2,3,4};
-		throwsRuntime(arr);
-		
+		//throwsRuntime(arr); // This terminates the 
+		try {
+			throwsRuntime(arr);
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println("Array Index Out of Bounds");
+		}
+		catch(IOException e) {
+			System.out.println("IO Exception");
+		}
 	}
 	
 	static void run() {
@@ -64,7 +73,7 @@ public class UnderstandingExceptions {
 	}
 	
 	static void runC() {
-		System.out.println("Enter a number");
+		System.out.println("Enter a String");
 		String newArray[] = {"tomi", "jane", "Matthew"};
 		try {
 			newArray[3] = "Kim";
